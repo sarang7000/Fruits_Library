@@ -3,10 +3,21 @@ body {
 	padding: 0px;
 }
 
-
+#scrooltop2 {
+	position: fixed;
+	top: 600;
+	margin-left: 1450px;
+	cursor: pointer;
+	float: left;
+	background-color: #fc5d35;
+	border-top-left-radius: 100%;
+	border-top-right-radius: 100%;
+	border-bottom-left-radius: 100%;
+	border-bottom-right-radius: 100%;
+}
 
 #scrooltop2:hover {
-	background-color: git push -u origin master#555;
+	background-color: #555;
 	transition: 500ms;
 }
 
