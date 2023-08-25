@@ -1,155 +1,238 @@
 <html>
-	<head>
-		<title>Login Signup</title>
-	</head>
-	
-	<style>
-		 body{
-			background-image:url('E:\Wallpaper/f.jpg');
-			background-size:100%;
-		 }
-		#login{
-			color:white;
-		}
-		#box1{
-			height:400px;
-			width:550px;
-			border-width:3px;
-			border-style:groove;
-			border-radius:40px;
-			margin:180px 150px;	
-			float:left;	
-			background-color:rgba(0,0,0,0.8);
-		}
-		.email{
-			background-image:url('logo/email.png');
-			background-repeat:no-repeat;
-			background-position:10px 10px;		
-			width:350px;
-			height:40px;
-			padding-left:30px;
-		}	
-		.password{
-			background-image:url('logo/password.png');
-			background-repeat:no-repeat;
-			background-position:10px 10px;
-			width:350px;
-			height:40px;
-			padding-left:30px;
-		}	
-		.submit{
-			width:150px;
-			height:30px;
-			background-color:#fc9b34;
-			border-style:solid;
-			border-radius:30px;
-		}
-		.submit:hover{
-			background-color: white;
-			transition: 0.3s;
-		}
-		a:link{
-			color:white;
-			font-size:15px;
-			transition: 0.3s;
-			text-decoration: none;
-		}
-		a:hover{
-			font-size:17px;
-			transition: 0.3s;
-			color: red;
-		}
-		a:active{
-			color:white;
-		}
-		.not{
-			color:white;
-		}
-		
-		#sign{
-			color:white;
-		}
-		.submit:link{
-			color:white;
-		}
-		.submit:active{
-			color:red;	
-		}
-		
-		
-		
-		
-		
-		#box2{
-			height:430px;
-			width:550px;
-			border-width:3px;
-			border-style:groove;
-			border-radius:40px;
-			margin:-586px 160px;
-			float:right;
-			background-color:rgba(0,0,0,0.8);
-		}
-		.fname{
-			height:40px;
-			width:145px;
-			margin-left:100px;
-			padding-left:36px;
-		}
-		.lname{
-			height:40px;
-			width:145px;
-			margin-left:55px;
-			padding-left:37px;
-		}
-		.email{
-			height:40px;
-			width:350px;
-		}
-		.btnsubmit{
-			height:30px;
-			width:150px;
-			background-color:#fc9b34;
-			border-radius:30px;
-		}
-		.btnsubmit:hover{
-			background-color: white;
-			transition: 0.3s;
-		}
-		.already{
-			color:white;
-		}
-		.btnsubmit:link{
-			color:white;
-		}
-		.btnsubmit:active{
-			color:red;
-		}
-		
-	</style>
-	<body>	
-			<div id="box1">
-				<form>
-					<center><h1 id="login">Login</h1></center><br>
-					<center><input class="email" type="email" name="email or phone" placeholder="Email or Phone"/><center><br>
-					<center><input class="password" type="password" name="password" placeholder="Password"/></center><br>
+
+<head>
+	<title>Login Signup</title>
+</head>
+
+<style>
+	body {
+		background-image: url('images/3626052.jpg');
+		background-size: 100%;
+	}
+
+	#login {
+		color: white;
+		font-family: 'EB Garamond', serif;
+		font-family: 'Playfair Display', serif;
+		font-family: 'Roboto Slab', serif;
+		font-family: 'Rock Salt', cursive;
+		font-weight: 900;
+	}
+
+	#box1 {
+		height: 400px;
+		width: 550px;
+		border-width: 3px;
+		border-style: groove;
+		border-radius: 40px;
+		margin: 180px 150px;
+		float: left;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	.email {
+		background-image: url('logo/email.png');
+		background-repeat: no-repeat;
+		background-position: 10px 10px;
+		width: 350px;
+		height: 40px;
+		padding-left: 30px;
+		font-family: 'EB Garamond', serif;
+		font-family: 'Playfair Display', serif;
+		font-family: 'Roboto Slab', serif;
+		font-family: 'Rock Salt', cursive;
+	}
+
+	.password {
+		background-image: url('logo/password.png');
+		background-repeat: no-repeat;
+		background-position: 10px 10px;
+		width: 350px;
+		height: 40px;
+		padding-left: 30px;
+		font-family: 'EB Garamond', serif;
+		font-family: 'Playfair Display', serif;
+		font-family: 'Roboto Slab', serif;
+		font-family: 'Rock Salt', cursive;
+	}
+
+	.submit {
+		width: 150px;
+		height: 30px;
+		background-color: #fc9b34;
+		border-style: solid;
+		border-radius: 30px;
+		font-family: 'EB Garamond', serif;
+		font-family: 'Playfair Display', serif;
+		font-family: 'Roboto Slab', serif;
+		font-family: 'Rock Salt', cursive;
+	}
+
+	.submit:hover {
+		background-color: white;
+		transition: 0.3s;
+	}
+
+	a:link {
+		color: white;
+		font-size: 15px;
+		transition: 0.3s;
+		text-decoration: none;
+		font-family: 'EB Garamond', serif;
+		font-family: 'Playfair Display', serif;
+		font-family: 'Roboto Slab', serif;
+		font-family: 'Rock Salt', cursive;
+	}
+
+	a:hover {
+		font-size: 17px;
+		transition: 0.3s;
+		color: red;
+	}
+
+	a:active {
+		color: white;
+	}
+
+	.not {
+		color: white;
+		font-family: 'EB Garamond', serif;
+		font-family: 'Playfair Display', serif;
+		font-family: 'Roboto Slab', serif;
+		font-family: 'Rock Salt', cursive;
+	}
+
+	#sign {
+		color: white;
+		font-family: 'EB Garamond', serif;
+		font-family: 'Playfair Display', serif;
+		font-family: 'Roboto Slab', serif;
+		font-family: 'Rock Salt', cursive;
+		font-weight: 900;
+	}
+
+	.submit:link {
+		color: white;
+	}
+
+	.submit:active {
+		color: red;
+	}
+
+
+
+
+
+	#box2 {
+		height: 430px;
+		width: 550px;
+		border-width: 3px;
+		border-style: groove;
+		border-radius: 40px;
+		margin: -586px 160px;
+		float: right;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	.fname {
+		height: 40px;
+		width: 145px;
+		margin-left: 100px;
+		padding-left: 36px;
+		font-family: 'EB Garamond', serif;
+		font-family: 'Playfair Display', serif;
+		font-family: 'Roboto Slab', serif;
+		font-family: 'Rock Salt', cursive;
+	}
+
+	.lname {
+		height: 40px;
+		width: 145px;
+		margin-left: 55px;
+		padding-left: 37px;
+		font-family: 'EB Garamond', serif;
+		font-family: 'Playfair Display', serif;
+		font-family: 'Roboto Slab', serif;
+		font-family: 'Rock Salt', cursive;
+	}
+
+	.email {
+		height: 40px;
+		width: 350px;
+		font-family: 'EB Garamond', serif;
+		font-family: 'Playfair Display', serif;
+		font-family: 'Roboto Slab', serif;
+		font-family: 'Rock Salt', cursive;
+	}
+
+	.btnsubmit {
+		height: 30px;
+		width: 150px;
+		background-color: #fc9b34;
+		border-radius: 30px;
+		font-family: 'EB Garamond', serif;
+		font-family: 'Playfair Display', serif;
+		font-family: 'Roboto Slab', serif;
+		font-family: 'Rock Salt', cursive;
+	}
+
+	.btnsubmit:hover {
+		background-color: white;
+		transition: 0.3s;
+	}
+
+	.already {	
+		color: white;
+		font-family: 'EB Garamond', serif;
+		font-family: 'Playfair Display', serif;
+		font-family: 'Roboto Slab', serif;
+		font-family: 'Rock Salt', cursive;
+	}
+
+	.btnsubmit:link {
+		color: white;
+		font-family: 'EB Garamond', serif;
+		font-family: 'Playfair Display', serif;
+		font-family: 'Roboto Slab', serif;
+		font-family: 'Rock Salt', cursive;
+	}
+
+	.btnsubmit:active {
+		color: red;
+	}
+</style>
+
+<body>
+	<div id="box1">
+		<form>
+			<center>
+				<h1 id="login">Login</h1>
+			</center><br>
+			<center><input class="email" type="email" name="email or phone" placeholder="Email or Phone" />
+				<center><br>
+					<center><input class="password" type="password" name="password" placeholder="Password" /></center>
+					<br>
 					<center><a href="Day 1.html"><b>Forgot Password?</b></a></center><br>
-					<center><input class="submit" type="submit" name="btnsubmit" value="Login"/></center><br>
+					<center><input class="submit" type="submit" name="btnsubmit" value="Login" /></center><br>
 					<center class="not">Not member?<b><a href="Day 1.html">Signup now</a></b></center>
-				</form>
-			</div>
-			
-			<div id="box2">
-				<form>
-					<center><h1 id="sign">Sign Up </h1></center><br>
-					<input class="fname" type="text" name="fname" placeholder="First Name"/>
-					<input class="lname" type="text" name="lname" placeholder="Last Name"/><br><br>
-					<center><input class="email" type="email" name="email" placeholder="Email"/></center><br>
-					<center><input class="password" type="password" name="password" placeholder="Password"/></center><br>
-					<center><input class="password" type="password" name="password" placeholder="Confirm Password"/></center><br>
-					<center><input class="btnsubmit" type="submit" name="btnsubmit" value="Sign in"/></center><br>
-					<center class="already">Already Have an account?<b><a href="Day 1.html">Login hear</a></b></center>
-				</form>
-			</div>	
-	</body>
+		</form>
+	</div>
+
+	<div id="box2">
+		<form>
+			<center>
+				<h1 id="sign">Sign Up </h1>
+			</center><br>
+			<input class="fname" type="text" name="fname" placeholder="First Name" />
+			<input class="lname" type="text" name="lname" placeholder="Last Name" /><br><br>
+			<center><input class="email" type="email" name="email" placeholder="Email" /></center><br>
+			<center><input class="password" type="password" name="password" placeholder="Password" /></center><br>
+			<center><input class="password" type="password" name="password" placeholder="Confirm Password" /></center>
+			<br>
+			<center><input class="btnsubmit" type="submit" name="btnsubmit" value="Sign in" /></center><br>
+			<center class="already">Already Have an account?<b><a href="Day 1.html">Login hear</a></b></center>
+		</form>
+	</div>
+</body>
+
 </html>
